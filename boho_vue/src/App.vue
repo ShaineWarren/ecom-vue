@@ -2,7 +2,7 @@
   <div id="wrapper"> 
     <nav class="navbar is-dark">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item"><strong>Boho Chic</strong> <small>&nbsp; Decor with a Vibe</small> </router-link>
+        <router-link to="/" class="navbar-item"><strong>Boho Chic</strong></router-link>
         
          <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="showMobileMenu =  !showMobileMenu">
             <span aria-hidden="true"></span>
