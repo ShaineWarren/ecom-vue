@@ -4,13 +4,16 @@ import { createStore } from 'vuex'
 // https://codesource.io/build-a-shopping-cart-with-vue-vuex-vue-material-design/
 // https://www.digitalocean.com/community/tutorials/how-to-build-a-shopping-cart-with-vue-3-and-vuex
 export default createStore({
-  state: {
+  state() {
+
+   return {
     cart: {
       items: [],
     },
     isAuthenticated: false,
     token: '',
-    isLoading: false,
+    // isLoading: false
+  }
   },
   getters: {
   },
@@ -32,9 +35,11 @@ export default createStore({
       } else {
         state.cart.items.push(item)
       }
-      localStorage.setItem('cart', JSON.stringify(state.cart))
-      
-    }
+      localStorage.setItem('cart', JSON.stringify(state.cart))     
+    },
+    // setIsLoading(state, status) {
+    //   state.isLoading = status
+    // }
   },
   actions: {
   },
