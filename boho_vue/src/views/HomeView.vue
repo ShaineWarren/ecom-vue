@@ -29,12 +29,17 @@
           <router-link v-bind:to="product.get_absolute_url" class="button is-dark mt-4">View Details</router-link>
         </div>
       </div>
+      <!-- <ProductBox
+        v-for="product in latestProducts"
+        v-bind:key="product.id"
+        v-bind:product="prooduct"/> -->
     </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import ProductBox from '@/components/ProductBox'
 
 export default {
   name: 'HomeView',
@@ -44,13 +49,14 @@ export default {
     }
   },
   components: {
-    
+    ProductBox
   },
   mounted() {
     this.getLatestProducts()
 
     document.title = 'Home | Boho Chic'
   },
+
   methods: {
     getLatestProducts() {
       axios
@@ -66,10 +72,3 @@ export default {
 }
 </script>
 
-<style scoped>
-  .image {
-    margin-top: -1.25rem;
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-  }
-</style>
