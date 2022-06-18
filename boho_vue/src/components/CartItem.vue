@@ -52,3 +52,5 @@ export default {
     },
 }
 </script>
+
+// refrence used: https://commercejs.com/docs/guides/cart-vue/#thats-it
