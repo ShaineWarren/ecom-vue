@@ -1,8 +1,6 @@
 import { createStore } from 'vuex'
 
-// refrence used: https://bestofvue.com/repo/connor11528-vuex-shopping-cart
-// https://codesource.io/build-a-shopping-cart-with-vue-vuex-vue-material-design/
-// https://www.digitalocean.com/community/tutorials/how-to-build-a-shopping-cart-with-vue-3-and-vuex
+
 export default createStore({
   state() {
 
@@ -57,9 +55,20 @@ export default createStore({
       state.token = ''
       state.isAuthenticated = false
   },
+  clearCart(state) {
+    state.cart = { items: [] }
+
+    localStorage.setItem('cart', JSON.stringify(state.cart))
+  },
 },
   actions: {
   },
   modules: {
   }
 })
+
+
+
+// refrence used: https://bestofvue.com/repo/connor11528-vuex-shopping-cart
+// https://codesource.io/build-a-shopping-cart-with-vue-vuex-vue-material-design/
+// https://www.digitalocean.com/community/tutorials/how-to-build-a-shopping-cart-with-vue-3-and-vue
