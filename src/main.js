@@ -6,4 +6,4 @@ import axios from 'axios'
 
 axios.defaults.baseURL = 'https://boho-django.herokuapp.com/'
 
-createApp(App).use(store).use(router, axios).mount('#app')
+createApp(App).use(store).use(router, axios).mount('#app') 
