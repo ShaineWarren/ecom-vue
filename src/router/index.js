@@ -93,7 +93,7 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
-
+ 
 export default router
 
 // refrences: https://stackoverflow.com/questions/52653337/vuejs-redirect-from-login-register-to-home-if-already-loggedin-redirect-from
