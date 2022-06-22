@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "@stripe/stripe-js": "^1.32.0",
@@ -14,6 +15,8 @@
     "bulma": "^0.9.4",
     "bulma-toast": "^2.4.1",
     "core-js": "^3.8.3",
+    "express": "^4.18.1",
+    "serve-static": "^1.15.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
