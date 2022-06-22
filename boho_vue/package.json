@@ -32,5 +32,8 @@
     "url": "ecom-vue"
   },
   "author": "ShaineWarren",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "8 || 10 || 12 || 14 || 16 || 17"
+  }
 }
