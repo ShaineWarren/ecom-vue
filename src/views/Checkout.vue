@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="field">
-                            <label>City, State*</label>
+                            <label>City*</label>
                             <div class="control">
                                 <input type="text" class="input" v-model="place">
                             </div>
